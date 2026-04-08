@@ -7,9 +7,9 @@ import {
 
 const IconBox = ({ Icon, fromColor, toColor, size = 28 }) => (
     <div
-        style={{ backgroundImage: `linear-gradient(145deg, ${fromColor} 0%, ${toColor} 100%)` }}
-        className="w-16 h-16 rounded-2xl flex items-center justify-center text-white shadow-md mb-4 shrink-0 md:w-16 md:h-16">
-        <Icon size={size} strokeWidth={2.5} className="drop-shadow-md" />
+        style={{ backgroundImage: `linear-gradient(90deg, ${fromColor} 0%, ${toColor} 100%)` }}
+        className="w-12 h-12 rounded-2xl flex items-center justify-center text-white mb-4 shrink-0 md:w-16 md:h-16">
+        <Icon size={size} strokeWidth={2.5}  className="drop-shadow-md" />
     </div>
 );
 

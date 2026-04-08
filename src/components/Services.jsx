@@ -1,6 +1,7 @@
 import React from "react";
     import { Stethoscope, LaptopMinimalCheck, ShieldUser,Ambulance, Check } from "lucide-react";
 
+
     const ServicesData = [
     {
         id: 1,
@@ -37,14 +38,11 @@ import React from "react";
         benefits: ["Emergency Response", "Critical Care Transport", "Trauma Treatment"]
     }]
 
-    
 
-
-
-export const Services = () => {
+const Services = () => {
     return (
         <section className="py-20 px-6">
-            <div className="max-w-7xl mx-auto text-center">
+            <div className="max-w-7xl mx-auto text-center ">
                 <span className="text-[#2563EB] font-semibold text-lg ">Our Services</span>
                 <h2 className="text-[#111827] font-black text-3xl md:text-5xl mt-2">Comprehensive Medical Solutions</h2>
                 <p className="text-[#4B5563] mt-8 text-base md:text-xl px-16">From preventive care to specialized treatments, we offer a complete range of medical services designed to meet your healthcare needs.</p>
@@ -63,8 +61,8 @@ function ServiceCard({ icon: Icon, title, description, benefits, iconColor, bgCo
     return (
         <div style={{ backgroundImage: bgColor }} className="p-8 rounded-2xl flex flex-col gap-6 text-left ">
 
-            <div style={{ backgroundColor: iconColor }} className="w-14 h-14 rounded-2xl flex items-center justify-center text-white shadow-lg">
-                <Icon size={26} strokeWidth={2.5} />
+            <div style={{ backgroundColor: iconColor }} className="w-16 h-16 rounded-2xl flex items-center justify-center text-white shadow-lg">
+                <Icon size={26} strokeWidth={2.5}/>
             </div>
             
             <div>
@@ -87,7 +85,7 @@ function ServiceCard({ icon: Icon, title, description, benefits, iconColor, bgCo
 }
 
 
-
+export default Services
 
 
 //     export const Services = () => {

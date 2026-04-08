@@ -45,7 +45,7 @@ const Features = () => {
                 {featuresData.map((feature) => (
                     <div key={feature.id} className='flex flex-col items-center text-center group'>
 
-                        <feature.Icon />
+                        <feature.Icon/>
                         <h3 className='text-xl text-[#111827] font-bold mt-4'>{feature.title}</h3>
                         <p className='text-[#4B5563] text-sm mt-2 leading-relaxed'>{feature.description}</p>
                     </div>
